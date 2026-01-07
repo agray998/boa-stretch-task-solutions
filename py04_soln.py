@@ -9,7 +9,7 @@ def validate_pod(pod: dict, prefix: str, port_range: tuple[int]) -> bool:
     validate_pod: iterates the containers in a given pod spec, and validates 
     (a) the container image is from an allowed registry identified by PREFIX
     (b) all container ports lie within the range bounded by port_range[0] and port_range[1]
-    >>> validate_pod(dict(spec=dict(containers=[dict(image="my-registry.io/apache")])), "my-registry.io/", (5000, 1000))
+    >>> validate_pod(dict(spec=dict(containers=[dict(image="my-registry.io/apache")])), "my-registry.io/", (5000, 10000))
     True
     '''
     valid = True
