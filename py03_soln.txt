@@ -1,0 +1,12 @@
+See vat_calculator/init.py for example docstring
+
+to generate documentation:
+
+python3 -m pydoc -w vat_calculator
+python3 -m pydoc -w vat_calculator.calculator
+
+will generate html files. Or, for more appealing formatting:
+
+python3 -m pydoc -p 5000
+
+will start a server, accessible via web browser at http://localhost:5000
